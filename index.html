@@ -3,39 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of Joshua Gomez - BSIT Student, Game Developer, and Tech Enthusiast">
+  <meta property="og:title" content="Joshua Gomez | Portfolio">
+  <meta property="og:description" content="BSIT Student @ GRC | Tech Enthusiast | Creative Thinker">
+  <meta property="og:image" content="preview.jpg">
   <title>Joshua Gomez | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-<!-- Navigation -->
-<nav class="navbar">
-  <div class="container">
-    <a href="#" class="logo">JG</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <span>👨‍💻</span> JG
+      </a>
 
-    <!-- 👇 Add this -->
-    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <ul class="nav-links" id="navbar">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#school">School</a></li>
-      <li><a href="#goals">Goals</a></li>
-    </ul>
+      <ul class="nav-links" id="navbar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#school">Education</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    <button class="toggle-mode" id="modeToggle">🌞</button>
-  </div>
-</nav>
-
+      <button class="toggle-mode" id="modeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="container hero-content">
-      <img src="img.png" alt="Joshua Gomez Portrait" class="portrait" />
+      <img src="img.jpg" alt="Joshua Gomez Portrait" class="portrait" />
       <div>
         <h1>Joshua Gomez</h1>
-        <p>BSIT Student @ GRC | Tech Enthusiast | Creative Thinker</p>
+        <p>BSIT Student @ GRC | Game Developer | Tech Enthusiast | Creative Thinker</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
       </div>
     </div>
   </section>
@@ -49,14 +64,16 @@
           <ul>
             <li><i class="fas fa-birthday-cake"></i> <strong>Birthday:</strong> December 10, 2005</li>
             <li><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Manila, Philippines</li>
-            <li><i class="fas fa-phone-alt"></i> <strong>Contact:</strong> 0936 344 2208</li>
+            <li><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 0936 344 2208</li>
+            <li><i class="fas fa-envelope"></i> <strong>Email:</strong> jg1752076@gmail.com</li>
+
           </ul>
         </div>
         <div class="about-description">
           <p>
-            I'm a tech-savvy student passionate about <strong>game development</strong>, <strong>creative design</strong>, and <strong>exploring operating systems</strong>. 
-            I once converted a Mac to run Android OS, showcasing my curiosity and adaptability in tech.
+            I'm a passionate BSIT student with a strong interest in game development, creative design, and exploring the depths of technology. My journey in tech began when I was just 12 years old, tinkering with my first computer and discovering the magic of coding.
           </p>
+
         </div>
       </div>
     </div>
@@ -65,58 +82,201 @@
   <!-- Skills Section -->
   <section id="skills" class="section">
     <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>🎮 Game Development</li>
-        <li>🧠 Affirmation & Motivation</li>
-        <li>⏳ Time Management</li>
-        <li>🎨 Creative Design & Editing</li>
-        <li>📱 OS Modding & Customization</li>
-      </ul>
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <h3>Technical Skills</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Game Development</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Web Development</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Mobile Development</span>
+              <span>70%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Problem Solving</span>
+              <span>90%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Teamwork</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Time Management</span>
+              <span>80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
 
   <!-- Hobbies Section -->
   <section id="hobbies" class="section">
     <div class="container">
-      <h2>Hobbies</h2>
-      <p>
-        I enjoy playing basketball, biking, and singing. Additionally, I have a keen interest in phone OS customization, often experimenting with different systems to enhance functionality.
-      </p>
+      <h2>My Hobbies</h2>
+      <div class="hobbies-container">
+        <div class="hobby-card">
+          <i class="fas fa-basketball-ball"></i>
+          <h3>Basketball</h3>
+          <p>Playing basketball helps me stay active and teaches teamwork and strategy.</p>
+        </div>
+        <div class="hobby-card">
+          <i class="fas fa-biking"></i>
+          <h3>Biking</h3>
+          <p>Exploring new places on my bike gives me a sense of freedom and adventure.</p>
+        </div>
+        <div class="hobby-card">
+          <i class="fas fa-music"></i>
+          <h3>Singing</h3>
+          <p>Music is my creative outlet and way to express emotions beyond coding.</p>
+        </div>
+        <div class="hobby-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>OS Customization</h3>
+          <p>Tinkering with operating systems satisfies my curiosity about how things work.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- School Section -->
   <section id="school" class="section">
     <div class="container">
-      <h2>School</h2>
-      <img src="grc-logo.png" alt="GRC Logo" class="school-logo" />
-      <p><strong>Institution:</strong> Global Reciprocal College</p>
-      <p><strong>Course:</strong> BS in Information Technology (BSIT)</p>
-      <ul>
-        <li>📅 Started: 2023</li>
-        <li>📚 Status: Currently Studying (2025)</li>
-      </ul>
+      <h2>Education</h2>
+      <div class="school-container">
+        <img src="grc-logo.png" alt="GRC Logo" class="school-logo" />
+        <div class="school-info">
+          <p><strong>Institution:</strong> Global Reciprocal College</p>
+          <p><strong>Course:</strong> Bachelor of Science in Information Technology (BSIT)</p>
+          <p><strong>Duration:</strong> 2023 - Present (Expected Graduation: 2027)</p>
+          
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Goals Section -->
   <section id="goals" class="section">
     <div class="container">
-      <h2>Goals</h2>
-      <ul class="goals-list">
-        <li>🎯 Graduate from BSIT</li>
-        <li>🚀 More goals coming soon!</li>
-      </ul>
+      <h2>My Goals</h2>
+      <div class="goals-container">
+        <div class="goal-card">
+          <div class="goal-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div>
+            <h3>Academic Goals</h3>
+            <p>Graduate with honors and complete specialized certifications in game development and mobile technologies.</p>
+          </div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div>
+            <h3>Career Goals</h3>
+            <p>Work for a leading game development studio and eventually start my own indie game company.</p>
+          </div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div>
+            <h3>Technical Goals</h3>
+            <p>Master Unity and Unreal Engine, and contribute to open-source mobile operating systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Manila, Philippines</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>jg1752076@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h3>Call Me</h3>
+              <p>+63 936 344 2208</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Joshua Gomez. Built with passion and dedication.</p>
+
+      <p>&copy; 2025 Joshua Gomez. All rights reserved.</p>
+      <p>Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> and passion</p>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 
   <script src="script.js"></script>
 </body>
