@@ -415,16 +415,17 @@ body {
 }
 
 /* Contact Section */
+/* Contact Section */
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: var(--section-padding);
 }
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -432,6 +433,16 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  background: var(--secondary);
+  padding: 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item:hover {
+  background: rgba(56, 189, 248, 0.1);
+  transform: translateY(-3px);
 }
 
 .contact-item i {
@@ -445,6 +456,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 
 
 

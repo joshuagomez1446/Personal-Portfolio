@@ -73,15 +73,42 @@ navLinks.forEach(link => {
   });
 });
 
+// === Back to Top Button ===
+const backToTop = document.getElementById("backToTop");
+if (backToTop) {
+  backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
 
+// === Logo Click Handler ===
+const logo = document.querySelector(".logo");
+if (logo) {
+  logo.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+    // Skip if it's the back-to-top button or logo
+    if (this.id !== "backToTop" && !this.classList.contains("logo")) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    }
   });
 });
